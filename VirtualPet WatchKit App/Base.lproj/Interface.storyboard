@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="Buu-dp-xva">
+            <objects>
+                <controller id="mQW-vM-6uQ"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="71"/>
+        </scene>
+        <!--VirtualPet-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="VirtualPetInterface" title="VirtualPet" id="AgC-eL-Hgc" customClass="VirtualPetInterfaceController" customModule="VirtualPet_WatchKit_Extension">
+                    <items>
+                        <imageView width="120" height="120" alignment="center" image="Pet" id="ek1-Zs-oYx"/>
+                        <label alignment="left" text="Helath: 90" id="2ko-W1-aOU"/>
+                        <label alignment="left" text="Cleaness: 80" id="6Pi-HH-kPI"/>
+                        <label alignment="left" text="Mood: 90" id="R91-de-0n7"/>
+                        <label alignment="left" text="Birthday: " id="S41-sG-KEx"/>
+                    </items>
+                    <menu key="menu" id="bKl-t2-Cg5">
+                        <items>
+                            <menuItem title="Feed" icon="play" id="Aak-SB-ibU">
+                                <connections>
+                                    <action selector="FeedMenuItem" destination="AgC-eL-Hgc" id="pIg-iA-kOV"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Action" icon="more" id="0JF-dE-uAR">
+                                <connections>
+                                    <action selector="ActionMenuItem" destination="AgC-eL-Hgc" id="gR0-Km-aqU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Shop" icon="share" id="sl3-ME-5xT">
+                                <connections>
+                                    <action selector="ShopMenuItem" destination="AgC-eL-Hgc" id="kZ0-0M-vqB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Friends" icon="info" id="UiR-VG-yXF">
+                                <connections>
+                                    <action selector="FriendMenuItem" destination="AgC-eL-Hgc" id="uuQ-E0-SFd"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="S41-sG-KEx" id="4dd-l9-g6y"/>
+                        <outlet property="cleanessLabel" destination="6Pi-HH-kPI" id="duf-HF-phC"/>
+                        <outlet property="healthLabel" destination="2ko-W1-aOU" id="7MT-s6-hg7"/>
+                        <outlet property="moodLabel" destination="R91-de-0n7" id="eoh-Qf-HgK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="293" y="368.5"/>
+        </scene>
+        <!--MainMenuTableInterface-->
+        <scene sceneID="8g5-df-OJc">
+            <objects>
+                <controller identifier="MainMenuTableInterface" id="UkR-As-lHk" customClass="MainMenuTableInterfaceController" customModule="VirtualPet_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="L7Y-BW-bZJ">
+                            <items>
+                                <tableRow identifier="MainMenuCell" id="JLr-4L-sSR" customClass="MainMenuItemRow" customModule="VirtualPet_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="FV8-u8-Kra">
+                                        <items>
+                                            <imageView alignment="left" id="gp9-5A-wDi"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="5EX-Wn-JZw"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="mainMenuItemImg" destination="gp9-5A-wDi" id="VOT-2m-9pM"/>
+                                        <outlet property="mainMenuItemTitle" destination="5EX-Wn-JZw" id="OXT-8Z-8b7"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="mainMenuTable" destination="L7Y-BW-bZJ" id="Lq7-eW-uqF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="336"/>
+        </scene>
+        <!--SubMenuTableInterface-->
+        <scene sceneID="4q3-76-K6u">
+            <objects>
+                <controller identifier="SubMenuTableInterface" id="7lg-nQ-VLb" customClass="SubMenuTableInterfaceController" customModule="VirtualPet_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="xnd-Qk-mAV">
+                            <items>
+                                <tableRow identifier="SubMenuCell" id="EIQ-yE-I2n" customClass="SubMenuItemRow" customModule="VirtualPet_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="3To-nx-7Pb">
+                                        <items>
+                                            <imageView alignment="left" id="gPV-NH-x07"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="CFU-gV-SE2"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="subMenuItemImg" destination="gPV-NH-x07" id="TIj-sr-5lV"/>
+                                        <outlet property="subMenuItemTitle" destination="CFU-gV-SE2" id="gNv-2r-kyI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="subMenuTable" destination="xnd-Qk-mAV" id="taT-la-dtu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="738" y="336"/>
+        </scene>
+    </scenes>
+</document>

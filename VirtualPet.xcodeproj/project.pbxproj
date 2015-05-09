@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4D9C3541AFC3015006D14DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3531AFC3015006D14DF /* AppDelegate.swift */; };
+		A4D9C3561AFC3015006D14DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3551AFC3015006D14DF /* ViewController.swift */; };
+		A4D9C3591AFC3015006D14DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C3571AFC3015006D14DF /* Main.storyboard */; };
+		A4D9C35B1AFC3015006D14DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C35A1AFC3015006D14DF /* Images.xcassets */; };
+		A4D9C35E1AFC3015006D14DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C35C1AFC3015006D14DF /* LaunchScreen.xib */; };
+		A4D9C36A1AFC3015006D14DF /* VirtualPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3691AFC3015006D14DF /* VirtualPetTests.swift */; };
+		A4D9C37C1AFC3024006D14DF /* VirtualPetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C37B1AFC3024006D14DF /* VirtualPetInterfaceController.swift */; };
+		A4D9C37E1AFC3024006D14DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C37D1AFC3024006D14DF /* Images.xcassets */; };
+		A4D9C3821AFC3024006D14DF /* VirtualPet WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C3811AFC3024006D14DF /* VirtualPet WatchKit App.app */; };
+		A4D9C38A1AFC3024006D14DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C3881AFC3024006D14DF /* Interface.storyboard */; };
+		A4D9C38C1AFC3024006D14DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D9C38B1AFC3024006D14DF /* Images.xcassets */; };
+		A4D9C38F1AFC3024006D14DF /* VirtualPet WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4D9C3771AFC3024006D14DF /* VirtualPet WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4D9C39E1AFC30C0006D14DF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3971AFC30C0006D14DF /* Food.swift */; };
+		A4D9C39F1AFC30C0006D14DF /* FoodCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3981AFC30C0006D14DF /* FoodCondition.swift */; };
+		A4D9C3A01AFC30C0006D14DF /* FoodProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3991AFC30C0006D14DF /* FoodProperty.swift */; };
+		A4D9C3A11AFC30C0006D14DF /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C39A1AFC30C0006D14DF /* FoodType.swift */; };
+		A4D9C3A21AFC30C0006D14DF /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C39B1AFC30C0006D14DF /* Pet.swift */; };
+		A4D9C3A31AFC30C0006D14DF /* PetCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C39C1AFC30C0006D14DF /* PetCondition.swift */; };
+		A4D9C3A41AFC30C0006D14DF /* PetProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C39D1AFC30C0006D14DF /* PetProperty.swift */; };
+		A4D9C3A81AFC330E006D14DF /* MainMenuTableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3A71AFC330E006D14DF /* MainMenuTableInterfaceController.swift */; };
+		A4D9C3AA1AFC3790006D14DF /* MainMenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3A91AFC3790006D14DF /* MainMenuItemRow.swift */; };
+		A4D9C3AF1AFC3F71006D14DF /* SubMenuTableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3AE1AFC3F71006D14DF /* SubMenuTableInterfaceController.swift */; };
+		A4D9C3B11AFC4059006D14DF /* SubMenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3B01AFC4059006D14DF /* SubMenuItemRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4D9C3641AFC3015006D14DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4D9C3461AFC3015006D14DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4D9C34D1AFC3015006D14DF;
+			remoteInfo = VirtualPet;
+		};
+		A4D9C3831AFC3024006D14DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4D9C3461AFC3015006D14DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4D9C3801AFC3024006D14DF;
+			remoteInfo = "VirtualPet WatchKit App";
+		};
+		A4D9C38D1AFC3024006D14DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4D9C3461AFC3015006D14DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4D9C3761AFC3024006D14DF;
+			remoteInfo = "VirtualPet WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4D9C3961AFC3024006D14DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4D9C38F1AFC3024006D14DF /* VirtualPet WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4D9C34E1AFC3015006D14DF /* VirtualPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D9C3521AFC3015006D14DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D9C3531AFC3015006D14DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4D9C3551AFC3015006D14DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4D9C3581AFC3015006D14DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4D9C35A1AFC3015006D14DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4D9C35D1AFC3015006D14DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A4D9C3631AFC3015006D14DF /* VirtualPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D9C3681AFC3015006D14DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D9C3691AFC3015006D14DF /* VirtualPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPetTests.swift; sourceTree = "<group>"; };
+		A4D9C3771AFC3024006D14DF /* VirtualPet WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VirtualPet WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D9C37A1AFC3024006D14DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D9C37B1AFC3024006D14DF /* VirtualPetInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPetInterfaceController.swift; sourceTree = "<group>"; };
+		A4D9C37D1AFC3024006D14DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4D9C3811AFC3024006D14DF /* VirtualPet WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirtualPet WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D9C3871AFC3024006D14DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D9C3891AFC3024006D14DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A4D9C38B1AFC3024006D14DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4D9C3971AFC30C0006D14DF /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		A4D9C3981AFC30C0006D14DF /* FoodCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCondition.swift; sourceTree = "<group>"; };
+		A4D9C3991AFC30C0006D14DF /* FoodProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodProperty.swift; sourceTree = "<group>"; };
+		A4D9C39A1AFC30C0006D14DF /* FoodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		A4D9C39B1AFC30C0006D14DF /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		A4D9C39C1AFC30C0006D14DF /* PetCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCondition.swift; sourceTree = "<group>"; };
+		A4D9C39D1AFC30C0006D14DF /* PetProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetProperty.swift; sourceTree = "<group>"; };
+		A4D9C3A71AFC330E006D14DF /* MainMenuTableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableInterfaceController.swift; sourceTree = "<group>"; };
+		A4D9C3A91AFC3790006D14DF /* MainMenuItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuItemRow.swift; sourceTree = "<group>"; };
+		A4D9C3AE1AFC3F71006D14DF /* SubMenuTableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuTableInterfaceController.swift; sourceTree = "<group>"; };
+		A4D9C3B01AFC4059006D14DF /* SubMenuItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuItemRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4D9C34B1AFC3015006D14DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C3601AFC3015006D14DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C3741AFC3024006D14DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4D9C3451AFC3015006D14DF = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3501AFC3015006D14DF /* VirtualPet */,
+				A4D9C3661AFC3015006D14DF /* VirtualPetTests */,
+				A4D9C3781AFC3024006D14DF /* VirtualPet WatchKit Extension */,
+				A4D9C3851AFC3024006D14DF /* VirtualPet WatchKit App */,
+				A4D9C34F1AFC3015006D14DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4D9C34F1AFC3015006D14DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C34E1AFC3015006D14DF /* VirtualPet.app */,
+				A4D9C3631AFC3015006D14DF /* VirtualPetTests.xctest */,
+				A4D9C3771AFC3024006D14DF /* VirtualPet WatchKit Extension.appex */,
+				A4D9C3811AFC3024006D14DF /* VirtualPet WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4D9C3501AFC3015006D14DF /* VirtualPet */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3531AFC3015006D14DF /* AppDelegate.swift */,
+				A4D9C3551AFC3015006D14DF /* ViewController.swift */,
+				A4D9C3571AFC3015006D14DF /* Main.storyboard */,
+				A4D9C35A1AFC3015006D14DF /* Images.xcassets */,
+				A4D9C35C1AFC3015006D14DF /* LaunchScreen.xib */,
+				A4D9C3511AFC3015006D14DF /* Supporting Files */,
+			);
+			path = VirtualPet;
+			sourceTree = "<group>";
+		};
+		A4D9C3511AFC3015006D14DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3521AFC3015006D14DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4D9C3661AFC3015006D14DF /* VirtualPetTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3691AFC3015006D14DF /* VirtualPetTests.swift */,
+				A4D9C3671AFC3015006D14DF /* Supporting Files */,
+			);
+			path = VirtualPetTests;
+			sourceTree = "<group>";
+		};
+		A4D9C3671AFC3015006D14DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3681AFC3015006D14DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4D9C3781AFC3024006D14DF /* VirtualPet WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3A51AFC30C8006D14DF /* Food */,
+				A4D9C3A61AFC30D0006D14DF /* Pet */,
+				A4D9C3AC1AFC37A5006D14DF /* VirtualPetInterface */,
+				A4D9C3AB1AFC379A006D14DF /* MainMenuTableInterface */,
+				A4D9C3AD1AFC3F45006D14DF /* SubMenuTableInterface */,
+				A4D9C37D1AFC3024006D14DF /* Images.xcassets */,
+				A4D9C3791AFC3024006D14DF /* Supporting Files */,
+			);
+			path = "VirtualPet WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A4D9C3791AFC3024006D14DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C37A1AFC3024006D14DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4D9C3851AFC3024006D14DF /* VirtualPet WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3881AFC3024006D14DF /* Interface.storyboard */,
+				A4D9C38B1AFC3024006D14DF /* Images.xcassets */,
+				A4D9C3861AFC3024006D14DF /* Supporting Files */,
+			);
+			path = "VirtualPet WatchKit App";
+			sourceTree = "<group>";
+		};
+		A4D9C3861AFC3024006D14DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3871AFC3024006D14DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4D9C3A51AFC30C8006D14DF /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3971AFC30C0006D14DF /* Food.swift */,
+				A4D9C3981AFC30C0006D14DF /* FoodCondition.swift */,
+				A4D9C3991AFC30C0006D14DF /* FoodProperty.swift */,
+				A4D9C39A1AFC30C0006D14DF /* FoodType.swift */,
+			);
+			name = Food;
+			sourceTree = "<group>";
+		};
+		A4D9C3A61AFC30D0006D14DF /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C39B1AFC30C0006D14DF /* Pet.swift */,
+				A4D9C39C1AFC30C0006D14DF /* PetCondition.swift */,
+				A4D9C39D1AFC30C0006D14DF /* PetProperty.swift */,
+			);
+			name = Pet;
+			sourceTree = "<group>";
+		};
+		A4D9C3AB1AFC379A006D14DF /* MainMenuTableInterface */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3A71AFC330E006D14DF /* MainMenuTableInterfaceController.swift */,
+				A4D9C3A91AFC3790006D14DF /* MainMenuItemRow.swift */,
+			);
+			name = MainMenuTableInterface;
+			sourceTree = "<group>";
+		};
+		A4D9C3AC1AFC37A5006D14DF /* VirtualPetInterface */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C37B1AFC3024006D14DF /* VirtualPetInterfaceController.swift */,
+			);
+			name = VirtualPetInterface;
+			sourceTree = "<group>";
+		};
+		A4D9C3AD1AFC3F45006D14DF /* SubMenuTableInterface */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9C3AE1AFC3F71006D14DF /* SubMenuTableInterfaceController.swift */,
+				A4D9C3B01AFC4059006D14DF /* SubMenuItemRow.swift */,
+			);
+			name = SubMenuTableInterface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4D9C34D1AFC3015006D14DF /* VirtualPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D9C36D1AFC3015006D14DF /* Build configuration list for PBXNativeTarget "VirtualPet" */;
+			buildPhases = (
+				A4D9C34A1AFC3015006D14DF /* Sources */,
+				A4D9C34B1AFC3015006D14DF /* Frameworks */,
+				A4D9C34C1AFC3015006D14DF /* Resources */,
+				A4D9C3961AFC3024006D14DF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D9C38E1AFC3024006D14DF /* PBXTargetDependency */,
+			);
+			name = VirtualPet;
+			productName = VirtualPet;
+			productReference = A4D9C34E1AFC3015006D14DF /* VirtualPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4D9C3621AFC3015006D14DF /* VirtualPetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D9C3701AFC3015006D14DF /* Build configuration list for PBXNativeTarget "VirtualPetTests" */;
+			buildPhases = (
+				A4D9C35F1AFC3015006D14DF /* Sources */,
+				A4D9C3601AFC3015006D14DF /* Frameworks */,
+				A4D9C3611AFC3015006D14DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D9C3651AFC3015006D14DF /* PBXTargetDependency */,
+			);
+			name = VirtualPetTests;
+			productName = VirtualPetTests;
+			productReference = A4D9C3631AFC3015006D14DF /* VirtualPetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4D9C3761AFC3024006D14DF /* VirtualPet WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D9C3931AFC3024006D14DF /* Build configuration list for PBXNativeTarget "VirtualPet WatchKit Extension" */;
+			buildPhases = (
+				A4D9C3731AFC3024006D14DF /* Sources */,
+				A4D9C3741AFC3024006D14DF /* Frameworks */,
+				A4D9C3751AFC3024006D14DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D9C3841AFC3024006D14DF /* PBXTargetDependency */,
+			);
+			name = "VirtualPet WatchKit Extension";
+			productName = "VirtualPet WatchKit Extension";
+			productReference = A4D9C3771AFC3024006D14DF /* VirtualPet WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A4D9C3801AFC3024006D14DF /* VirtualPet WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D9C3901AFC3024006D14DF /* Build configuration list for PBXNativeTarget "VirtualPet WatchKit App" */;
+			buildPhases = (
+				A4D9C37F1AFC3024006D14DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VirtualPet WatchKit App";
+			productName = "VirtualPet WatchKit App";
+			productReference = A4D9C3811AFC3024006D14DF /* VirtualPet WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4D9C3461AFC3015006D14DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = JuneDesign;
+				TargetAttributes = {
+					A4D9C34D1AFC3015006D14DF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A4D9C3621AFC3015006D14DF = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A4D9C34D1AFC3015006D14DF;
+					};
+					A4D9C3761AFC3024006D14DF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A4D9C3801AFC3024006D14DF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A4D9C3491AFC3015006D14DF /* Build configuration list for PBXProject "VirtualPet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4D9C3451AFC3015006D14DF;
+			productRefGroup = A4D9C34F1AFC3015006D14DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4D9C34D1AFC3015006D14DF /* VirtualPet */,
+				A4D9C3621AFC3015006D14DF /* VirtualPetTests */,
+				A4D9C3761AFC3024006D14DF /* VirtualPet WatchKit Extension */,
+				A4D9C3801AFC3024006D14DF /* VirtualPet WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4D9C34C1AFC3015006D14DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D9C3591AFC3015006D14DF /* Main.storyboard in Resources */,
+				A4D9C35E1AFC3015006D14DF /* LaunchScreen.xib in Resources */,
+				A4D9C35B1AFC3015006D14DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C3611AFC3015006D14DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C3751AFC3024006D14DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D9C3821AFC3024006D14DF /* VirtualPet WatchKit App.app in Resources */,
+				A4D9C37E1AFC3024006D14DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C37F1AFC3024006D14DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D9C38A1AFC3024006D14DF /* Interface.storyboard in Resources */,
+				A4D9C38C1AFC3024006D14DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4D9C34A1AFC3015006D14DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D9C3561AFC3015006D14DF /* ViewController.swift in Sources */,
+				A4D9C3541AFC3015006D14DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C35F1AFC3015006D14DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D9C36A1AFC3015006D14DF /* VirtualPetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9C3731AFC3024006D14DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D9C3B11AFC4059006D14DF /* SubMenuItemRow.swift in Sources */,
+				A4D9C3A31AFC30C0006D14DF /* PetCondition.swift in Sources */,
+				A4D9C3A11AFC30C0006D14DF /* FoodType.swift in Sources */,
+				A4D9C3AA1AFC3790006D14DF /* MainMenuItemRow.swift in Sources */,
+				A4D9C3A81AFC330E006D14DF /* MainMenuTableInterfaceController.swift in Sources */,
+				A4D9C3A41AFC30C0006D14DF /* PetProperty.swift in Sources */,
+				A4D9C37C1AFC3024006D14DF /* VirtualPetInterfaceController.swift in Sources */,
+				A4D9C3AF1AFC3F71006D14DF /* SubMenuTableInterfaceController.swift in Sources */,
+				A4D9C39F1AFC30C0006D14DF /* FoodCondition.swift in Sources */,
+				A4D9C3A21AFC30C0006D14DF /* Pet.swift in Sources */,
+				A4D9C3A01AFC30C0006D14DF /* FoodProperty.swift in Sources */,
+				A4D9C39E1AFC30C0006D14DF /* Food.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4D9C3651AFC3015006D14DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4D9C34D1AFC3015006D14DF /* VirtualPet */;
+			targetProxy = A4D9C3641AFC3015006D14DF /* PBXContainerItemProxy */;
+		};
+		A4D9C3841AFC3024006D14DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4D9C3801AFC3024006D14DF /* VirtualPet WatchKit App */;
+			targetProxy = A4D9C3831AFC3024006D14DF /* PBXContainerItemProxy */;
+		};
+		A4D9C38E1AFC3024006D14DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4D9C3761AFC3024006D14DF /* VirtualPet WatchKit Extension */;
+			targetProxy = A4D9C38D1AFC3024006D14DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4D9C3571AFC3015006D14DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D9C3581AFC3015006D14DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4D9C35C1AFC3015006D14DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D9C35D1AFC3015006D14DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A4D9C3881AFC3024006D14DF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D9C3891AFC3024006D14DF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4D9C36B1AFC3015006D14DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4D9C36C1AFC3015006D14DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4D9C36E1AFC3015006D14DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VirtualPet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4D9C36F1AFC3015006D14DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VirtualPet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A4D9C3711AFC3015006D14DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VirtualPetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualPet.app/VirtualPet";
+			};
+			name = Debug;
+		};
+		A4D9C3721AFC3015006D14DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VirtualPetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualPet.app/VirtualPet";
+			};
+			name = Release;
+		};
+		A4D9C3911AFC3024006D14DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = VirtualPet_WatchKit_Extension;
+				INFOPLIST_FILE = "VirtualPet WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A4D9C3921AFC3024006D14DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = VirtualPet_WatchKit_Extension;
+				INFOPLIST_FILE = "VirtualPet WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A4D9C3941AFC3024006D14DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VirtualPet WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A4D9C3951AFC3024006D14DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "VirtualPet WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4D9C3491AFC3015006D14DF /* Build configuration list for PBXProject "VirtualPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D9C36B1AFC3015006D14DF /* Debug */,
+				A4D9C36C1AFC3015006D14DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D9C36D1AFC3015006D14DF /* Build configuration list for PBXNativeTarget "VirtualPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D9C36E1AFC3015006D14DF /* Debug */,
+				A4D9C36F1AFC3015006D14DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D9C3701AFC3015006D14DF /* Build configuration list for PBXNativeTarget "VirtualPetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D9C3711AFC3015006D14DF /* Debug */,
+				A4D9C3721AFC3015006D14DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D9C3901AFC3024006D14DF /* Build configuration list for PBXNativeTarget "VirtualPet WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D9C3911AFC3024006D14DF /* Debug */,
+				A4D9C3921AFC3024006D14DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D9C3931AFC3024006D14DF /* Build configuration list for PBXNativeTarget "VirtualPet WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D9C3941AFC3024006D14DF /* Debug */,
+				A4D9C3951AFC3024006D14DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4D9C3461AFC3015006D14DF /* Project object */;
+}
