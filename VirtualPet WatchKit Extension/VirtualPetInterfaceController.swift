@@ -9,49 +9,56 @@
 import WatchKit
 import Foundation
 
+var pet: Pet!
+
+var menuData = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("MenuItemsData", ofType: "plist")!)!
 
 class VirtualPetInterfaceController: WKInterfaceController {
-    
-    var pet: Pet!
-    
-    static var vpic:VirtualPetInterfaceController!
     
     @IBOutlet weak var healthLabel: WKInterfaceLabel!
     @IBOutlet weak var cleanessLabel: WKInterfaceLabel!
     @IBOutlet weak var moodLabel: WKInterfaceLabel!
     @IBOutlet weak var birthdayLabel: WKInterfaceLabel!
     
+    static var mainInterface: VirtualPetInterfaceController!
+    
     @IBAction func FeedMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: "Feed")
+        pushControllerWithName("MainMenuTableInterface", context: 0)
     }
     
     @IBAction func ActionMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: "Action")
+        pushControllerWithName("MainMenuTableInterface", context: 1)
     }
     
     @IBAction func ShopMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: "Shop")
+        pushControllerWithName("MainMenuTableInterface", context: 2)
     }
     
     @IBAction func FriendMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: "Friends")
+        pushControllerWithName("MainMenuTableInterface", context: 3)
     }
     
     func initVirtualPet() {
         if (pet == nil) {
             
             pet = Pet(name: "aaa")
-            VirtualPetInterfaceController.vpic = self
             
             pet.decreaseHealthBy(50)
             
         }
+        
+        setTitle(pet.getName())
+        
         refreshCondition()
         
     }
     
     func refreshCondition() {
-        setTitle(pet.getName())
+        
+        if (VirtualPetInterfaceController.mainInterface == nil) {
+            VirtualPetInterfaceController.mainInterface = self
+        }
+        
         healthLabel.setText("Health: \(pet.getHealth())")
         cleanessLabel.setText("Cleaness: \(pet.getCleaness())")
         moodLabel.setText("Mood: \(pet.getMood())")

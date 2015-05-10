@@ -12,37 +12,45 @@ import Foundation
 
 class SubMenuTableInterfaceController: WKInterfaceController {
     
-    var cat = [String]()
+    var cat = [Int]()
     
     @IBOutlet weak var subMenuTable: WKInterfaceTable!
-    
-    let subMenuItems = ["Food": ["Rice", "Pancake", "Noodle", "Dumpling"],
-                    "Snack": ["Cookie", "Yourgt", "Chocolate", "Candy"],
-                    "Fruit": ["Apple", "Banana", "Peal", "Orange"],
-                    "Drink": ["Coca", "Pepsi", "7Up", "Sprite"]]
-    
+
     func initMenu() {
         
-        setTitle(cat[1])
+        setTitle(menuData[cat[0]][cat[1]][0] as? String)
         
-        subMenuTable.setNumberOfRows(subMenuItems[cat[1]]!.count, withRowType: "SubMenuCell")
+        subMenuTable.setNumberOfRows(menuData[cat[0]][cat[1]][1].count, withRowType: "SubMenuCell")
         
-        for (var i = 0; i < subMenuItems[cat[1]]!.count; i++) {
-            //println(menuItems[i])
+        for (var i = 0; i < menuData[cat[0]][cat[1]][1].count; i++) {
             let row = subMenuTable.rowControllerAtIndex(i) as! SubMenuItemRow
-            row.subMenuItemTitle.setText(subMenuItems[cat[1]]![i])
+            row.subMenuItemTitle.setText(menuData[cat[0]][cat[1]][1][i] as? String)
         }
         
     }
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        switch rowIndex {
+        switch cat[0] {
         case 0:
-            VirtualPetInterfaceController.vpic.pet.increaseHealthBy(10)
-            popToRootController()
+            switch cat[1] {
+            case 1:
+                switch rowIndex {
+                case 0:
+                    pet.increaseHealthBy(10)
+                    popToRootController()
+                    
+                default:
+                    popToRootController()
+                }
+                
+            default:
+                popToRootController()
+            }
+            
         default:
             popToRootController()
         }
+        
     }
 
     override func awakeWithContext(context: AnyObject?) {
@@ -51,7 +59,7 @@ class SubMenuTableInterfaceController: WKInterfaceController {
         // Configure interface objects here.
         
         if (context != nil) {
-            cat = context as! [String]
+            cat = context as! [Int]
             
         }
         

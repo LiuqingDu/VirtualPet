@@ -10,28 +10,34 @@ import Foundation
 
 class PetCondition {
     
-    private var health: Int {
+    private var health: Int = 100 {
         didSet {
-            VirtualPetInterfaceController.vpic.refreshCondition()
+            if (VirtualPetInterfaceController.mainInterface != nil) {
+                VirtualPetInterfaceController.mainInterface.refreshCondition()
+            }
         }
     }
     
-    private var cleaness: Int {
+    private var cleaness: Int = 100 {
         didSet {
-            VirtualPetInterfaceController.vpic.refreshCondition()
+            if (VirtualPetInterfaceController.mainInterface != nil) {
+                VirtualPetInterfaceController.mainInterface.refreshCondition()
+            }
         }
     }
 
-    private var mood: Int {
+    private var mood: Int = 100 {
         didSet {
-            VirtualPetInterfaceController.vpic.refreshCondition()
+            if (VirtualPetInterfaceController.mainInterface != nil) {
+                VirtualPetInterfaceController.mainInterface.refreshCondition()
+            }
         }
     }
     
     init() {
-        health = 100
-        cleaness = 100
-        mood = 100
+//        health = 100
+//        cleaness = 100
+//        mood = 100
     }
     
     func increaseHealthBy(number: Int) {

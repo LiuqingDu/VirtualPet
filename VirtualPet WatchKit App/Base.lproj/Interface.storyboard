@@ -5,22 +5,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="Buu-dp-xva">
-            <objects>
-                <controller id="mQW-vM-6uQ"/>
-            </objects>
-            <point key="canvasLocation" x="293" y="71"/>
-        </scene>
         <!--VirtualPet-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller identifier="VirtualPetInterface" title="VirtualPet" id="AgC-eL-Hgc" customClass="VirtualPetInterfaceController" customModule="VirtualPet_WatchKit_Extension">
                     <items>
                         <imageView width="120" height="120" alignment="center" image="Pet" id="ek1-Zs-oYx"/>
-                        <label alignment="left" text="Helath: 90" id="2ko-W1-aOU"/>
-                        <label alignment="left" text="Cleaness: 80" id="6Pi-HH-kPI"/>
-                        <label alignment="left" text="Mood: 90" id="R91-de-0n7"/>
+                        <label alignment="left" text="Health: " id="2ko-W1-aOU"/>
+                        <label alignment="left" text="Cleaness: " id="6Pi-HH-kPI"/>
+                        <label alignment="left" text="Mood: " id="R91-de-0n7"/>
                         <label alignment="left" text="Birthday: " id="S41-sG-KEx"/>
                     </items>
                     <menu key="menu" id="bKl-t2-Cg5">
@@ -47,15 +40,16 @@
                             </menuItem>
                         </items>
                     </menu>
-                    <connections>
-                        <outlet property="birthdayLabel" destination="S41-sG-KEx" id="4dd-l9-g6y"/>
-                        <outlet property="cleanessLabel" destination="6Pi-HH-kPI" id="duf-HF-phC"/>
-                        <outlet property="healthLabel" destination="2ko-W1-aOU" id="7MT-s6-hg7"/>
-                        <outlet property="moodLabel" destination="R91-de-0n7" id="eoh-Qf-HgK"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="293" y="368.5"/>
+            <point key="canvasLocation" x="286" y="336"/>
+        </scene>
+        <!--Back-->
+        <scene sceneID="iHd-bI-NfF">
+            <objects>
+                <controller title="Back" id="sC9-SA-qYD"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="81"/>
         </scene>
         <!--MainMenuTableInterface-->
         <scene sceneID="8g5-df-OJc">
@@ -84,7 +78,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="520" y="336"/>
+            <point key="canvasLocation" x="471" y="303"/>
         </scene>
         <!--SubMenuTableInterface-->
         <scene sceneID="4q3-76-K6u">
@@ -113,7 +107,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="738" y="336"/>
+            <point key="canvasLocation" x="664" y="303"/>
         </scene>
     </scenes>
 </document>

@@ -12,30 +12,25 @@ import Foundation
 
 class MainMenuTableInterfaceController: WKInterfaceController {
     
-    var cat = ""
+    var cat = 0
 
     @IBOutlet weak var mainMenuTable: WKInterfaceTable!
     
-    let mainMenuItems = ["Feed": ["Food", "Snack", "Fruit", "Drink"],
-                    "Action": ["Play", "Dance", "Sing", "Sleep"],
-                    "Shop": ["Food", "Snack", "Fruit", "Drink", "Ball", "Shoes", "CD"],
-                    "Friends": ["Friend01", "Friend02", "Friend03", "Add Friend"]]
-    
     func initMenu() {
         
-        setTitle(cat)
+        setTitle(menuData[cat][0] as? String)
         
-        mainMenuTable.setNumberOfRows(mainMenuItems[cat]!.count, withRowType: "MainMenuCell")
+        mainMenuTable.setNumberOfRows(menuData[cat].count - 1, withRowType: "MainMenuCell")
         
-        for (var i = 0; i < mainMenuItems[cat]!.count; i++) {
-            let row = mainMenuTable.rowControllerAtIndex(i) as! MainMenuItemRow
-            row.mainMenuItemTitle.setText(mainMenuItems[cat]![i])
+        for (var i = 1; i < menuData[cat].count; i++) {
+            let row = mainMenuTable.rowControllerAtIndex(i - 1) as! MainMenuItemRow
+            row.mainMenuItemTitle.setText(menuData[cat][i][0] as? String)
         }
         
     }
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        pushControllerWithName("SubMenuTableInterface", context: [cat, mainMenuItems[cat]![rowIndex]])
+        pushControllerWithName("SubMenuTableInterface", context: [cat, rowIndex + 1])
         
     }
     
@@ -45,7 +40,7 @@ class MainMenuTableInterfaceController: WKInterfaceController {
         // Configure interface objects here.
         
         if (context != nil) {
-            cat = context as! String
+            cat = context as! Int
             
         }
         
