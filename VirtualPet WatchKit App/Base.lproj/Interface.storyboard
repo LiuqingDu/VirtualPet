@@ -40,6 +40,12 @@
                             </menuItem>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="S41-sG-KEx" id="WAU-xB-pxb"/>
+                        <outlet property="cleanessLabel" destination="6Pi-HH-kPI" id="5DC-Vj-iq5"/>
+                        <outlet property="healthLabel" destination="2ko-W1-aOU" id="DCH-ou-xcK"/>
+                        <outlet property="moodLabel" destination="R91-de-0n7" id="mA7-zs-tea"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="286" y="336"/>
@@ -47,9 +53,15 @@
         <!--Back-->
         <scene sceneID="iHd-bI-NfF">
             <objects>
-                <controller title="Back" id="sC9-SA-qYD"/>
+                <controller identifier="CreatePetInterface" title="Back" id="sC9-SA-qYD">
+                    <items>
+                        <label alignment="center" text="Congratulations" id="Z1U-R8-I02"/>
+                        <label alignment="center" verticalAlignment="center" text="You just got yourself a VirtualPet!" numberOfLines="3" id="p8f-xc-Z8v"/>
+                        <label alignment="center" verticalAlignment="center" text="Name is" id="qzD-UM-P3D"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="286" y="81"/>
+            <point key="canvasLocation" x="286" y="59"/>
         </scene>
         <!--MainMenuTableInterface-->
         <scene sceneID="8g5-df-OJc">

@@ -11,7 +11,7 @@ import Foundation
 
 var pet: Pet!
 
-var menuData = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("MenuItemsData", ofType: "plist")!)!
+var menuData = NSDictionary(contentsOfFile: NSBundle.mainBundle().pathForResource("MenuData", ofType: "plist")!)!
 
 class VirtualPetInterfaceController: WKInterfaceController {
     
@@ -22,20 +22,22 @@ class VirtualPetInterfaceController: WKInterfaceController {
     
     static var mainInterface: VirtualPetInterfaceController!
     
+    let cat = [["Feed"], ["Action"], ["Shop"], ["Friends"]]
+    
     @IBAction func FeedMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: 0)
+        pushControllerWithName("MainMenuTableInterface", context: cat[0])
     }
     
     @IBAction func ActionMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: 1)
+        pushControllerWithName("MainMenuTableInterface", context: cat[1])
     }
     
     @IBAction func ShopMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: 2)
+        pushControllerWithName("MainMenuTableInterface", context: cat[2])
     }
     
     @IBAction func FriendMenuItem() {
-        pushControllerWithName("MainMenuTableInterface", context: 3)
+        pushControllerWithName("MainMenuTableInterface", context: cat[3])
     }
     
     func initVirtualPet() {
@@ -43,7 +45,9 @@ class VirtualPetInterfaceController: WKInterfaceController {
             
             pet = Pet(name: "aaa")
             
-            pet.decreaseHealthBy(50)
+            pet.increaseConditionBy(["Health": -50])
+            
+            presentControllerWithName("CreatePetInterface", context: nil)
             
         }
         
@@ -75,6 +79,8 @@ class VirtualPetInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        //println("Data: \(data)")
         
         initVirtualPet()
     }

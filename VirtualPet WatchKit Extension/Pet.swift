@@ -44,45 +44,49 @@ class Pet {
         
     }
     
-    func increaseHealthBy(number: Int) {
-        condition.increaseHealthBy(number)
-        
+    func increaseConditionBy(dict: [String: Int]) {
+        condition.increaseConditionBy(dict)
     }
     
-    func decreaseHealthBy(number: Int) {
-        condition.decreaseHealthBy(number)
-        
-    }
+//    func increaseHealthBy(number: Int) {
+//        condition.increaseHealthBy(number)
+//        
+//    }
+//    
+//    func decreaseHealthBy(number: Int) {
+//        condition.decreaseHealthBy(number)
+//        
+//    }
     
     func getHealth() -> Int{
         return condition.getHealth()
         
     }
     
-    func increaseCleanessBy(number: Int) {
-        condition.increaseCleanessBy(number)
-        
-    }
-    
-    func decreaseCleanessBy(number: Int) {
-        condition.decreaseCleanessBy(number)
-        
-    }
+//    func increaseCleanessBy(number: Int) {
+//        condition.increaseCleanessBy(number)
+//        
+//    }
+//    
+//    func decreaseCleanessBy(number: Int) {
+//        condition.decreaseCleanessBy(number)
+//        
+//    }
     
     func getCleaness() -> Int {
         return condition.getCleaness()
         
     }
     
-    func increaseMoodBy(number: Int) {
-        condition.increaseMoodBy(number)
-        
-    }
-    
-    func decreaseMoodBy(number: Int) {
-        condition.decreaseMoodBy(number)
-        
-    }
+//    func increaseMoodBy(number: Int) {
+//        condition.increaseMoodBy(number)
+//        
+//    }
+//    
+//    func decreaseMoodBy(number: Int) {
+//        condition.decreaseMoodBy(number)
+//        
+//    }
     
     func getMood() -> Int {
         return condition.getMood()

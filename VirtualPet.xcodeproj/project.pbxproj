@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4906B831AFFA05A00C2D0E5 /* MenuItemsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4906B821AFFA05A00C2D0E5 /* MenuItemsData.plist */; };
 		A4B040131AFEFDD200EF6F93 /* MenuItemsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B040121AFEFDD200EF6F93 /* MenuItemsData.swift */; };
 		A4D38BCF1AFFF3C0006F2434 /* MenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4D38BCE1AFFF3C0006F2434 /* MenuData.plist */; };
 		A4D9C3541AFC3015006D14DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3531AFC3015006D14DF /* AppDelegate.swift */; };
@@ -74,7 +73,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A4906B821AFFA05A00C2D0E5 /* MenuItemsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuItemsData.plist; sourceTree = "<group>"; };
 		A4B040121AFEFDD200EF6F93 /* MenuItemsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsData.swift; sourceTree = "<group>"; };
 		A4D38BCE1AFFF3C0006F2434 /* MenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuData.plist; sourceTree = "<group>"; };
 		A4D9C34E1AFC3015006D14DF /* VirtualPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				A4B040121AFEFDD200EF6F93 /* MenuItemsData.swift */,
-				A4906B821AFFA05A00C2D0E5 /* MenuItemsData.plist */,
 				A4D38BCE1AFFF3C0006F2434 /* MenuData.plist */,
 			);
 			name = Data;
@@ -431,7 +428,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4906B831AFFA05A00C2D0E5 /* MenuItemsData.plist in Resources */,
 				A4D9C3821AFC3024006D14DF /* VirtualPet WatchKit App.app in Resources */,
 				A4D9C37E1AFC3024006D14DF /* Images.xcassets in Resources */,
 				A4D38BCF1AFFF3C0006F2434 /* MenuData.plist in Resources */,
