@@ -9,7 +9,7 @@
 			<key>Rice</key>
 			<dict>
 				<key>Health</key>
-				<integer>10</integer>
+				<integer>100</integer>
 			</dict>
 			<key>Pancake</key>
 			<dict>

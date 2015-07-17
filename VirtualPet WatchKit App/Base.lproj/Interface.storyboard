@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="a3i-dk-Suv">
+            <objects>
+                <notificationController id="Qf1-YT-7gc">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="lu0-9Y-h7i"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="rx6-Ai-17L"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="lu0-9Y-h7i" id="lqn-QS-5Ye"/>
+                        <segue destination="azS-ji-icr" kind="relationship" relationship="dynamicNotificationInterface" id="WHM-qy-E0s"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="286" y="67"/>
+        </scene>
         <!--VirtualPet-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller identifier="VirtualPetInterface" title="VirtualPet" id="AgC-eL-Hgc" customClass="VirtualPetInterfaceController" customModule="VirtualPet_WatchKit_Extension">
                     <items>
-                        <imageView width="120" height="120" alignment="center" image="Pet" id="ek1-Zs-oYx"/>
+                        <imageView alignment="center" image="Pet" id="ek1-Zs-oYx"/>
                         <label alignment="left" text="Health: " id="2ko-W1-aOU"/>
                         <label alignment="left" text="Cleaness: " id="6Pi-HH-kPI"/>
                         <label alignment="left" text="Mood: " id="R91-de-0n7"/>
@@ -48,20 +64,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="286" y="336"/>
-        </scene>
-        <!--Back-->
-        <scene sceneID="iHd-bI-NfF">
-            <objects>
-                <controller identifier="CreatePetInterface" title="Back" id="sC9-SA-qYD">
-                    <items>
-                        <label alignment="center" text="Congratulations" id="Z1U-R8-I02"/>
-                        <label alignment="center" verticalAlignment="center" text="You just got yourself a VirtualPet!" numberOfLines="3" id="p8f-xc-Z8v"/>
-                        <label alignment="center" verticalAlignment="center" text="Name is" id="qzD-UM-P3D"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="286" y="59"/>
+            <point key="canvasLocation" x="286" y="320.5"/>
         </scene>
         <!--MainMenuTableInterface-->
         <scene sceneID="8g5-df-OJc">
@@ -92,6 +95,29 @@
             </objects>
             <point key="canvasLocation" x="471" y="303"/>
         </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="R3r-3v-4Rb">
+            <objects>
+                <glanceController id="pqj-T0-DmH" customClass="GlanceInterfaceController" customModule="VirtualPet_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="y6e-Q7-VGl"/>
+                        <group alignment="left" layout="vertical" id="kTA-Xy-ymU">
+                            <items>
+                                <label alignment="left" text="Label" id="Juk-8F-adb"/>
+                                <label alignment="left" text="Label" id="eqE-68-p3c"/>
+                                <label alignment="left" text="Label" id="2S2-x9-mre"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cleanessLabel" destination="eqE-68-p3c" id="xNr-cA-PGH"/>
+                        <outlet property="healthLabel" destination="Juk-8F-adb" id="nYf-pO-ynj"/>
+                        <outlet property="moodLabel" destination="2S2-x9-mre" id="MI8-7u-bXc"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="286" y="606"/>
+        </scene>
         <!--SubMenuTableInterface-->
         <scene sceneID="4q3-76-K6u">
             <objects>
@@ -120,6 +146,13 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="664" y="303"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="kXg-JC-Fw6">
+            <objects>
+                <controller id="azS-ji-icr" customClass="NotificationController" customModule="VirtualPet_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="67"/>
         </scene>
     </scenes>
 </document>

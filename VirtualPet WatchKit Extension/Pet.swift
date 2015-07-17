@@ -13,8 +13,8 @@ class Pet {
     private let property: PetProperty
     private let condition: PetCondition
     
-    convenience init () {
-        self.init(name: "test")
+    convenience init() {
+        self.init(name: "")
         
     }
     
@@ -22,6 +22,11 @@ class Pet {
         property = PetProperty(name: name)
         condition = PetCondition()
         
+    }
+    
+    init(name: String, sex: Int, birthday: NSDate, health: Int, cleaness: Int, mood: Int) {
+        property = PetProperty(name: name, sex: sex, birthday: birthday)
+        condition = PetCondition(health: health, cleaness: cleaness, mood: mood)
     }
     
     func getName() -> String {

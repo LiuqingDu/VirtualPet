@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43EAFF11B1A93E100F287B5 /* GlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43EAFF01B1A93E000F287B5 /* GlanceInterfaceController.swift */; };
+		A43EAFF91B1A997900F287B5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43EAFF81B1A997900F287B5 /* NotificationController.swift */; };
 		A4B040131AFEFDD200EF6F93 /* MenuItemsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B040121AFEFDD200EF6F93 /* MenuItemsData.swift */; };
 		A4D38BCF1AFFF3C0006F2434 /* MenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4D38BCE1AFFF3C0006F2434 /* MenuData.plist */; };
 		A4D9C3541AFC3015006D14DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9C3531AFC3015006D14DF /* AppDelegate.swift */; };
@@ -73,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A43EAFF01B1A93E000F287B5 /* GlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceInterfaceController.swift; sourceTree = "<group>"; };
+		A43EAFF81B1A997900F287B5 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A4B040121AFEFDD200EF6F93 /* MenuItemsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsData.swift; sourceTree = "<group>"; };
 		A4D38BCE1AFFF3C0006F2434 /* MenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuData.plist; sourceTree = "<group>"; };
 		A4D9C34E1AFC3015006D14DF /* VirtualPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A43EAFF21B1A93EC00F287B5 /* GlanceInterfaceController */ = {
+			isa = PBXGroup;
+			children = (
+				A43EAFF01B1A93E000F287B5 /* GlanceInterfaceController.swift */,
+			);
+			name = GlanceInterfaceController;
+			sourceTree = "<group>";
+		};
+		A43EAFF51B1A980300F287B5 /* NotificationInterfaceController */ = {
+			isa = PBXGroup;
+			children = (
+				A43EAFF81B1A997900F287B5 /* NotificationController.swift */,
+			);
+			name = NotificationInterfaceController;
+			sourceTree = "<group>";
+		};
 		A4D9C3451AFC3015006D14DF = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +220,8 @@
 				A4D9C3AC1AFC37A5006D14DF /* VirtualPetInterface */,
 				A4D9C3AB1AFC379A006D14DF /* MainMenuTableInterface */,
 				A4D9C3AD1AFC3F45006D14DF /* SubMenuTableInterface */,
+				A43EAFF21B1A93EC00F287B5 /* GlanceInterfaceController */,
+				A43EAFF51B1A980300F287B5 /* NotificationInterfaceController */,
 				A4D9C37D1AFC3024006D14DF /* Images.xcassets */,
 				A4D9C3791AFC3024006D14DF /* Supporting Files */,
 			);
@@ -467,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43EAFF91B1A997900F287B5 /* NotificationController.swift in Sources */,
 				A4B040131AFEFDD200EF6F93 /* MenuItemsData.swift in Sources */,
 				A4D9C3B11AFC4059006D14DF /* SubMenuItemRow.swift in Sources */,
 				A4D9C3A31AFC30C0006D14DF /* PetCondition.swift in Sources */,
@@ -478,6 +501,7 @@
 				A4D9C3AF1AFC3F71006D14DF /* SubMenuTableInterfaceController.swift in Sources */,
 				A4D9C39F1AFC30C0006D14DF /* FoodCondition.swift in Sources */,
 				A4D9C3A21AFC30C0006D14DF /* Pet.swift in Sources */,
+				A43EAFF11B1A93E100F287B5 /* GlanceInterfaceController.swift in Sources */,
 				A4D9C3A01AFC30C0006D14DF /* FoodProperty.swift in Sources */,
 				A4D9C39E1AFC30C0006D14DF /* Food.swift in Sources */,
 			);

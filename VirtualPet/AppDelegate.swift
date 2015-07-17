@@ -12,10 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        if (userInfo!["Action"]! as! String == "CancelNotification") {
+            UIApplication.sharedApplication().cancelAllLocalNotifications()
+        } else {
+            var n = UILocalNotification()
+            n.alertTitle = "Notification"
+            n.alertBody = userInfo!["Notification"] as? String
+            n.fireDate = NSDate(timeIntervalSinceNow: userInfo!["Delay"] as! Double)
+            n.timeZone = NSTimeZone.defaultTimeZone()
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(n)
+            reply(["Successed": "True"])
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if UIApplication.sharedApplication().currentUserNotificationSettings().types == UIUserNotificationType.None {
+            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Sound | .Alert | .Badge, categories: nil))
+            //UIApplication.sharedApplication().registerForRemoteNotifications()
+        }
         return true
     }
 

@@ -12,9 +12,14 @@ class PetCondition {
     
     private var condition: [String: Int] = ["Health": 100, "Cleaness": 100, "Mood": 100]
     
+    convenience init() {
+        self.init(health: 100, cleaness: 100, mood: 100)
+    }
     
-    init() {
-        
+    init(health: Int, cleaness: Int, mood: Int) {
+        updateCondition("Health", value: health)
+        updateCondition("Cleaness", value: cleaness)
+        updateCondition("Mood", value: mood)
     }
     
     private func updateCondition(key: String, value: Int) {
@@ -30,6 +35,7 @@ class PetCondition {
             var v = condition[key]! + dict[key]!
             
             v = v > 100 ? 100 : v
+            v = v < 0 ? 0 : v
             
             updateCondition(key, value: v)
         }

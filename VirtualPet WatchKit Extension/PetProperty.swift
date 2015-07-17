@@ -20,8 +20,15 @@ class PetProperty {
     
     init(name: String) {
         self.name = name
-        sex = Sex(rawValue: Int(arc4random()%2))!
-        birthday = NSDate()
+        self.sex = Sex(rawValue: Int(arc4random()%2))!
+        self.birthday = NSDate()
+        
+    }
+    
+    init(name: String, sex: Int, birthday: NSDate) {
+        self.name = name
+        self.sex = Sex(rawValue: sex)!
+        self.birthday = birthday
         
     }
     
